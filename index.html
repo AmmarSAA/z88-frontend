@@ -3,21 +3,30 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>z88.tech — Your portfolio, generated</title>
+  <title>z88 Technologies — Your portfolio, generated</title>
   <meta name="description" content="Turn your resume, socials, and photos into a fully hosted personal portfolio website at yourname.z88.tech — written and designed by AI." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@500;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="glow glow-1"></div>
-  <div class="glow glow-2"></div>
+  <div class="orb orb-cyan orb-1"></div>
+  <div class="orb orb-purple orb-2"></div>
+  <div class="orb orb-cyan orb-3"></div>
 
   <header class="site-header">
     <div class="wrap">
-      <div class="brand">z88<span class="dot">.</span>tech</div>
-      <a class="header-link" href="#generate">Get started</a>
+      <div class="brand">
+        <svg class="brand-icon" viewBox="0 0 60 60" width="26" height="26" aria-hidden="true">
+          <path d="M 5 5 L 55 5 L 55 20 Q 58 34 20 40 L 55 40 L 55 55 L 5 55 L 5 40 Q 2 26 40 20 L 5 20 Z" fill="#00CFFF" stroke="#00CFFF" stroke-width="3" stroke-linejoin="round"/>
+        </svg>
+        <div class="brand-word">
+          <span class="brand-z">z</span><span class="brand-88">88</span>
+        </div>
+        <span class="brand-sub">Technologies</span>
+      </div>
+      <a class="header-link glass" href="#generate">Get started</a>
     </div>
   </header>
 
@@ -25,7 +34,7 @@
     <!-- ─── Hero ─────────────────────────────────────────────────────────── -->
     <section class="hero">
       <div class="wrap">
-        <span class="badge">Powered by Groq AI</span>
+        <span class="badge glass">Powered by AmmarSAA</span>
         <h1>Your portfolio,<br /><span class="grad">generated</span> in minutes.</h1>
         <p class="lede">
           Give us your resume, your socials, a few photos — we'll write the copy,
@@ -36,17 +45,17 @@
 
         <div class="steps">
           <div class="step">
-            <div class="step-num">1</div>
+            <div class="step-num glass">1</div>
             <div class="step-label">Tell us about you</div>
           </div>
           <div class="step-arrow">→</div>
           <div class="step">
-            <div class="step-num">2</div>
+            <div class="step-num glass">2</div>
             <div class="step-label">AI writes &amp; designs</div>
           </div>
           <div class="step-arrow">→</div>
           <div class="step">
-            <div class="step-num">3</div>
+            <div class="step-num glass">3</div>
             <div class="step-label">Live at your subdomain</div>
           </div>
         </div>
@@ -59,7 +68,7 @@
         <h2>Generate your site</h2>
         <p class="section-sub">Only handle and name are required — everything else is optional and helps the AI write better copy.</p>
 
-        <form id="generate-form" novalidate>
+        <form id="generate-form" class="glass" novalidate>
           <div class="field">
             <label for="handle">Handle <span class="req">*</span></label>
             <div class="handle-input">
@@ -129,7 +138,7 @@
         </form>
 
         <!-- ─── Progress panel ──────────────────────────────────────────── -->
-        <div class="progress-panel" id="progress-panel" hidden>
+        <div class="progress-panel glass" id="progress-panel" hidden>
           <h3>Building <span id="progress-handle"></span>.z88.tech</h3>
           <ul class="progress-steps" id="progress-steps">
             <li data-step="enrich"><span class="dot-icon"></span> Writing your copy with AI</li>
@@ -141,18 +150,18 @@
         </div>
 
         <!-- ─── Success panel ───────────────────────────────────────────── -->
-        <div class="result-panel result-success" id="success-panel" hidden>
+        <div class="result-panel result-success glass" id="success-panel" hidden>
           <div class="result-icon">✓</div>
           <h3>Your site is live!</h3>
           <a class="result-url" id="result-url" href="#" target="_blank" rel="noopener"></a>
           <div class="result-actions">
             <a class="btn btn-primary" id="visit-site-btn" href="#" target="_blank" rel="noopener">Visit your site</a>
-            <button class="btn btn-ghost" id="generate-another-btn" type="button">Generate another</button>
+            <button class="btn btn-ghost glass" id="generate-another-btn" type="button">Generate another</button>
           </div>
         </div>
 
         <!-- ─── Error panel ─────────────────────────────────────────────── -->
-        <div class="result-panel result-error" id="error-panel" hidden>
+        <div class="result-panel result-error glass" id="error-panel" hidden>
           <div class="result-icon error">✕</div>
           <h3>Something went wrong</h3>
           <p class="error-message" id="error-message"></p>
@@ -162,9 +171,15 @@
     </section>
   </main>
 
-  <footer class="site-footer">
+  <footer class="site-footer glass">
     <div class="wrap">
-      <span>z88.tech — AI-generated personal portfolios</span>
+      <span class="footer-left">
+        <svg class="footer-icon" viewBox="0 0 60 60" width="14" height="14" aria-hidden="true">
+          <path d="M 5 5 L 55 5 L 55 20 Q 58 34 20 40 L 55 40 L 55 55 L 5 55 L 5 40 Q 2 26 40 20 L 5 20 Z" fill="#00CFFF" stroke="#00CFFF" stroke-width="3" stroke-linejoin="round"/>
+        </svg>
+        z88 Technologies — AI-generated personal portfolios
+      </span>
+      <span class="footer-center">Powered by <a href="https://ammarsaa.com" target="_blank" rel="noopener">AmmarSAA.com</a></span>
       <span class="footer-api">API: <a href="https://api.z88.tech/health" target="_blank" rel="noopener">api.z88.tech</a></span>
     </div>
   </footer>
