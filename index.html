@@ -5,6 +5,100 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>z88 Technologies — Your portfolio, generated</title>
   <meta name="description" content="Turn your resume, socials, and photos into a fully hosted personal portfolio website at yourname.z88.tech — written and designed by AI." />
+  <link rel="canonical" href="https://z88.tech/" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <meta name="theme-color" content="#090A0D" />
+
+  <!-- Social previews (LinkedIn, WhatsApp, X, Facebook) -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="z88 Technologies" />
+  <meta property="og:url" content="https://z88.tech/" />
+  <meta property="og:title" content="z88 Technologies — Your portfolio, generated" />
+  <meta property="og:description" content="Turn your resume, socials, and photos into a fully hosted personal portfolio website at yourname.z88.tech — written and designed by AI." />
+  <meta property="og:image" content="https://z88.tech/og-image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="z88 Technologies — Your portfolio, generated in minutes" />
+  <meta property="og:locale" content="en_US" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="z88 Technologies — Your portfolio, generated" />
+  <meta name="twitter:description" content="Turn your resume, socials, and photos into a fully hosted personal portfolio website at yourname.z88.tech — written and designed by AI." />
+  <meta name="twitter:image" content="https://z88.tech/og-image.png" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://z88.tech/#organization",
+        "name": "z88 Technologies",
+        "url": "https://z88.tech/",
+        "logo": "https://z88.tech/logo.png",
+        "email": "contact@z88.tech",
+        "description": "z88 Technologies turns a resume, social profiles and photos into a hosted personal portfolio website, written and designed by AI.",
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "contactType": "customer support",
+          "email": "contact@z88.tech",
+          "availableLanguage": "English"
+        },
+        "sameAs": [
+          "https://github.com/AmmarSAA",
+          "https://ammarsaa.com"
+        ]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://z88.tech/#website",
+        "url": "https://z88.tech/",
+        "name": "z88 Technologies",
+        "inLanguage": "en",
+        "publisher": { "@id": "https://z88.tech/#organization" }
+      },
+      {
+        "@type": "Service",
+        "@id": "https://z88.tech/#service",
+        "name": "AI-generated personal portfolio websites",
+        "serviceType": "Portfolio website generation and hosting",
+        "provider": { "@id": "https://z88.tech/#organization" },
+        "areaServed": "Worldwide",
+        "description": "Give z88 your resume, social links and photos. AI writes the copy, designs the site and publishes it at yourname.z88.tech."
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://z88.tech/#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What does z88 Technologies do?",
+            "acceptedAnswer": { "@type": "Answer", "text": "z88 builds you a personal portfolio website from your resume, social links and photos. AI writes the copy and designs the site, and it is published at yourname.z88.tech." }
+          },
+          {
+            "@type": "Question",
+            "name": "What do I need to get started?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Only a handle and your name. A resume (PDF, DOCX or TXT), up to 10 portfolio images, a short bio and your social links are optional and help the AI write better copy." }
+          },
+          {
+            "@type": "Question",
+            "name": "How long does it take?",
+            "acceptedAnswer": { "@type": "Answer", "text": "About 2 to 5 minutes. You see live progress while the copy is written, the site is built and deployed, and your subdomain and HTTPS certificate are connected." }
+          },
+          {
+            "@type": "Question",
+            "name": "Where will my site be hosted?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Your site is hosted for you at your own subdomain, yourname.z88.tech, served over HTTPS. You do not need your own hosting or domain." }
+          },
+          {
+            "@type": "Question",
+            "name": "What happens to the files I upload?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Your resume and details are used to write your site. Images you upload are published on your site. Temporary copies are deleted from our server once your site is built. See the privacy policy for details." }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Syne:wght@500;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -134,7 +228,7 @@
             <span class="btn-text">Generate my site</span>
           </button>
 
-          <p class="form-note">Takes about 2 minutes. You'll see live progress below.</p>
+          <p class="form-note">Takes about 2 to 5 minutes. You'll see live progress below.</p>
         </form>
 
         <!-- ─── Progress panel ──────────────────────────────────────────── -->
@@ -153,7 +247,7 @@
         <div class="result-panel result-success glass" id="success-panel" hidden>
           <div class="result-icon">✓</div>
           <h3>Your site is live!</h3>
-          <a class="result-url" id="result-url" href="#" target="_blank" rel="noopener"></a>
+          <a class="result-url" id="result-url" href="#" target="_blank" rel="noopener" aria-label="Open your new site in a new tab"></a>
           <div class="result-actions">
             <a class="btn btn-primary" id="visit-site-btn" href="#" target="_blank" rel="noopener">Visit your site</a>
             <button class="btn btn-ghost glass" id="generate-another-btn" type="button">Generate another</button>
@@ -169,6 +263,37 @@
         </div>
       </div>
     </section>
+    <!-- ─── FAQ ──────────────────────────────────────────────────────────── -->
+    <section class="faq" id="faq">
+      <div class="wrap wrap-narrow">
+        <h2>Frequently asked questions</h2>
+
+        <details class="faq-item glass">
+          <summary>What does z88 Technologies do?</summary>
+          <p>z88 builds you a personal portfolio website from your resume, social links and photos. AI writes the copy and designs the site, and it is published at <code>yourname.z88.tech</code>.</p>
+        </details>
+
+        <details class="faq-item glass">
+          <summary>What do I need to get started?</summary>
+          <p>Only a handle and your name. A resume (PDF, DOCX or TXT), up to 10 portfolio images, a short bio and your social links are optional and help the AI write better copy.</p>
+        </details>
+
+        <details class="faq-item glass">
+          <summary>How long does it take?</summary>
+          <p>About 2 to 5 minutes. You see live progress while the copy is written, the site is built and deployed, and your subdomain and HTTPS certificate are connected.</p>
+        </details>
+
+        <details class="faq-item glass">
+          <summary>Where will my site be hosted?</summary>
+          <p>Your site is hosted for you at your own subdomain, <code>yourname.z88.tech</code>, served over HTTPS. You do not need your own hosting or domain.</p>
+        </details>
+
+        <details class="faq-item glass">
+          <summary>What happens to the files I upload?</summary>
+          <p>Your resume and details are used to write your site. Images you upload are published on your site. Temporary copies are deleted from our server once your site is built. See the <a href="/privacy.html">privacy policy</a> for details.</p>
+        </details>
+      </div>
+    </section>
   </main>
 
   <footer class="site-footer glass">
@@ -180,7 +305,12 @@
         z88 Technologies — AI-generated personal portfolios
       </span>
       <span class="footer-center">Powered by <a href="https://ammarsaa.com" target="_blank" rel="noopener">AmmarSAA.com</a></span>
-      <span class="footer-api">API: <a href="https://api.z88.tech/health" target="_blank" rel="noopener">api.z88.tech</a></span>
+      <nav class="footer-links" aria-label="Footer">
+        <a href="mailto:contact@z88.tech">contact@z88.tech</a>
+        <a href="https://github.com/AmmarSAA" target="_blank" rel="noopener me">GitHub</a>
+        <a href="/privacy.html">Privacy policy</a>
+        <a href="https://api.z88.tech/health" target="_blank" rel="noopener">API status</a>
+      </nav>
     </div>
   </footer>
 

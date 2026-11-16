@@ -422,8 +422,58 @@ textarea { resize: vertical; min-height: 90px; }
 .footer-icon { flex-shrink: 0; opacity: 0.8; }
 .footer-center a { color: var(--silver); font-weight: 600; }
 .footer-center a:hover { color: var(--cyan); }
-.footer-api a { color: var(--silver); }
-.footer-api a:hover { color: var(--cyan); }
+.footer-links { display: flex; flex-wrap: wrap; gap: 6px 16px; justify-content: center; }
+.footer-links a { color: var(--silver); }
+.footer-links a:hover { color: var(--cyan); }
+
+/* ─── Legal pages ──────────────────────────────────────────────────────── */
+a.brand { text-decoration: none; color: inherit; }
+.legal { position: relative; z-index: 1; padding: 56px 0 100px; }
+.legal h1 { font-family: 'Syne', sans-serif; font-size: 38px; font-weight: 800; margin: 0 0 6px; color: var(--cloud); }
+.legal h2 { font-family: 'Syne', sans-serif; font-size: 21px; font-weight: 700; margin: 36px 0 10px; color: var(--cloud); }
+.legal p, .legal li { color: var(--silver); font-size: 15px; line-height: 1.7; }
+.legal ul { padding-left: 20px; margin: 0 0 12px; }
+.legal li { margin-bottom: 6px; }
+.legal strong { color: var(--cloud); }
+.legal a { color: var(--cyan); }
+.legal-updated { color: var(--silver-dim) !important; font-size: 13.5px !important; margin: 0 0 28px; }
+
+/* ─── FAQ ──────────────────────────────────────────────────────────────── */
+.faq { position: relative; z-index: 1; padding: 0 0 110px; }
+.faq h2 {
+  font-family: 'Syne', sans-serif;
+  font-size: 30px;
+  font-weight: 800;
+  letter-spacing: -0.01em;
+  margin: 0 0 28px;
+  text-align: center;
+  color: var(--cloud);
+}
+.faq-item { border-radius: 14px; margin-bottom: 12px; padding: 0 20px; }
+.faq-item summary {
+  cursor: pointer;
+  list-style: none;
+  padding: 18px 28px 18px 0;
+  font-weight: 600;
+  font-size: 15.5px;
+  color: var(--cloud);
+  position: relative;
+}
+.faq-item summary::-webkit-details-marker { display: none; }
+.faq-item summary::after {
+  content: '+';
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--cyan);
+  font-size: 20px;
+  font-weight: 400;
+}
+.faq-item[open] summary::after { content: '−'; }
+.faq-item summary:focus-visible { outline: 2px solid var(--cyan); outline-offset: 4px; border-radius: 6px; }
+.faq-item p { margin: 0 0 18px; color: var(--silver); font-size: 14.5px; line-height: 1.65; }
+.faq-item a { color: var(--cyan); }
 
 @media (max-width: 640px) {
   form { padding: 22px; }

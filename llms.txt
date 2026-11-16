@@ -1,0 +1,20 @@
+# z88 Technologies
+
+> z88 Technologies turns a person's resume, social links and photos into a fully hosted personal portfolio website. AI writes the copy and designs the site, and it is published at the person's own subdomain, yourname.z88.tech, over HTTPS.
+
+## What it does
+
+- Input: a handle and a name (required); optionally a resume (PDF, DOCX or TXT), up to 10 images, a bio, a tagline and social profile links.
+- Output: a live personal portfolio site at https://yourname.z88.tech, usually ready in 2 to 5 minutes.
+- No coding, design work or separate hosting is needed.
+
+## Key pages
+
+- [Home and site generator](https://z88.tech/): describes the service and hosts the generation form.
+- [Frequently asked questions](https://z88.tech/#faq)
+- [Privacy policy](https://z88.tech/privacy.html)
+
+## Contact
+
+- Email: contact@z88.tech
+- Built by AmmarSAA: https://ammarsaa.com, https://github.com/AmmarSAA
